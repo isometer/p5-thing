@@ -1,10 +1,38 @@
+let appIcon;
+let hooray;
+
+function preload() {
+  soundFormats('mp3');
+  imageFormats('png');
+  appIcon = loadImage('assets/zoom_logo.png');
+  hooray = loadSound('assets/hooray.mp3');
+}
+
 function setup() {
   createCanvas(400, 400);
 }
 
 function draw() {
   background(220);
+
+  icon = img(appIcon, 25, 25, 50, 50);
+
+  drawAppIcon();
   
+}
+
+function drawAppIcon() {
+
+  icon = img(appIcon, 25, 25, 50, 50);
+
+  icon.mousePressed(() => openApp());
+
+}
+
+function openApp() {
+
+  hooraySound.play()
+
 }
 
 // fake Zoom
