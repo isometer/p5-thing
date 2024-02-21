@@ -1,0 +1,28 @@
+{
+  "name": "p5-thing",
+  "version": "1.0.0",
+  "description": "An interaction on Screen with 5 state changes.",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isometer/p5-thing.git"
+  },
+  "keywords": [
+    "p5js",
+    "hci",
+    "node"
+  ],
+  "author": "Brigham Pettit and Casey Pei",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isometer/p5-thing/issues"
+  },
+  "homepage": "https://github.com/isometer/p5-thing#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "p5js": "^1.2.18"
+  }
+}
