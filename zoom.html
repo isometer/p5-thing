@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>zoom - P5js Challenge 5</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.ico?v=2">
+    <link rel="shortcut icon" type="image/png" href="/assets/favicon/favicon-32x32.png?v=2"/>
+
+    <link rel="stylesheet" href="zoom.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.min.js"></script>
+    <script src="/node_modules/p5js/p5.js/p5.min.js"></script>
+    <script src="/node_modules/p5js/p5.js/p5.sound.min.js"></script>
+    <script src='https://cdn.rawgit.com/processing/p5.accessibility/v0.1.1/dist/p5-accessibility.js'></script> 
+
+</head>
+<body>
+    <header>
+        <img src="assets/Zoom-logo-long.png" height="40px">
+
+        <nav>
+            <a href="/index.html">home</a> |
+            <a href="/zoom.html">new meeting</a>
+        </nav> 
+    </header>
+
+    <main>
+        <script src="zoom.js"></script>
+
+        <h1>New Meeting</h1>
+
+        <div class="meeting-box">
+            <div id="camera"></div>       
+            <div id="meeting-settings">
+                <h2>Meeting Settings</h2>
+
+                <h3>Name</h3>
+                <div id="name">
+
+                </div>
+
+                <h3>Profile Picture</h3>
+                <div id="pfp">
+
+                </div>
+
+                <h3>Display Image</h3>
+                <div id="select">
+                    <!-- choose between camera, pfp or name -->
+                </div>
+
+                <h3>Audio Settings</h3>
+                <div id="audio">
+
+                </div>
+                
+
+
+                <a href="/meetingSuccess.html" class="btn" role="button">Start Meeting</a>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Copyright © Zoom 2024</p>
+        <p>Definitely not made by Brigham Petit and Casey Pei</p>
+    </footer>
+</body>
+</html>
