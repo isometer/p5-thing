@@ -50,7 +50,7 @@ function mousePressed() {
 
 function openApp() {
 
-  hooray("app opened successfully.");
+  //hooray("app opened successfully.");
   window.location.href="zoom.html";  
 
 }
