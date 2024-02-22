@@ -46,5 +46,6 @@ window.onload = async function() {
   } else {
     title.innerHTML = "Unnamed Meeting";
   }
+  
 }
 
