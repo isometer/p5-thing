@@ -40,7 +40,7 @@ main {
 
 #camera {
     text-align: center;
-
+    
 }
 
 #meeting-settings {
@@ -85,3 +85,26 @@ footer {
 .setting-label {
     margin-right: 20px;
 }
+
+#select {
+    display:flex;
+}
+
+.radioWithLabel {
+    margin-right: 20px;
+}
+
+.username-display {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center; /* Vertical centering */
+    justify-content: center; /* Horizontal centering */
+    text-align: center;
+    font-size: 24px;
+    width: 500px;
+    height: 350px;
+}
+

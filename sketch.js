@@ -57,10 +57,10 @@ function openApp() {
 
 // fake Zoom
 
-// interaction #1 -- ME
+// interaction #1 -- ME // DONE
   // open the app (click)
 
-// #2 - ME
+// #2 - ME // DONE
   // start a meeting (click)
 
 // #2 - Casey
@@ -69,7 +69,7 @@ function openApp() {
 // #3 - Casey
   // upload a profile picture (upload)
 
-// #4  -- ME
+// #4  -- ME // DONE
   // change the name of Zoom call (typing)
 
 // #5  -- ME

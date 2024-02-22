@@ -38,9 +38,16 @@
                 <h2>Meeting Settings</h2>
 
                 <div class="setting-box">
-                    <h3 class="setting-label">Name</h3>
-                    <div id="name">
-                        <input type="text" id="nameInput">
+                    <h3 class="setting-label">Meeting Name</h3>
+                    <div id="meeting-name">
+                        <input type="text" id="meetingNameInput">
+                    </div>
+                </div>
+
+                <div class="setting-box">
+                    <h3 class="setting-label">User Name</h3>
+                    <div id="user-name">
+                        <input type="text" id="userNameInput">
                     </div>
                 </div>
 
@@ -55,9 +62,25 @@
 
                 
                 <div class="setting-box">
-                    <h3 class="setting-label">Display Image</h3>
+                    <h3 class="setting-label">Display</h3>
                     <div id="select">
                         <!-- choose between camera, pfp or name -->
+                        
+                        <div class="radioWithLabel">
+                            <input type="radio", checked=true, name="displayType", value="Camera", id="cameraRadio"> 
+                            <label for="camera">Camera</label>
+                        </div>
+                        
+                        <div class="radioWithLabel">
+                            <input type="radio", name="displayType", value="Proile Picture", id="cameraRadio"> 
+                            <label for="profile-picture">Profile Picture</label>
+                        </div>
+
+                        <div class="radioWithLabel">
+                            <input type="radio", name="displayType", value="User Name", id="cameraRadio">
+                            <label for="user-name">User Name</label>
+                        </div>
+
                     </div>
                 </div>
 
