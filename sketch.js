@@ -70,7 +70,7 @@ function openApp() {
   // upload a profile picture (upload)
 
 // #4  -- ME
-  // change your name on Zoom call (typing)
+  // change the name of Zoom call (typing)
 
 // #5  -- ME
   // toggle between name, profile, camera (?)
