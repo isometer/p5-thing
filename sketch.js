@@ -59,10 +59,10 @@ function openApp() {
 // interaction #1 -- ME
   // open the app (click)
 
-// #2 - Casey
+// #2 - ME
   // start a meeting (click)
 
-// interaction #2
+// #2 - Casey
   // slider to change audio levels (slider)
 
 // #3 - Casey
