@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+
+    background-color: white;
+    color: black;
+}
+
+header {
+    position: sticky;
+    display: flex;
+    padding: 2% 2%;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: white;
+    border-bottom: 1px gray solid;
+}
+
+nav {
+    display: flex;
+    gap: 5px;
+}
+
+main {
+    padding: 2% 2%;
+}
+
+.meeting-box {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+#camera {
+    text-align: center;
+
+}
+
+#meeting-settings {
+    border-radius: 25px;
+    border: 1px gray solid;
+    padding: 0% 2%;
+    flex-grow: 1;
+}
+
+.btn {
+    border-radius: 50px;
+    padding: 5px 10px;
+    background-color: rgb(0, 115, 255);
+    color: white;
+    border: 0px;
+    transition: 0.25s;
+    text-decoration: none;
+}
+
+.btn:hover {
+    cursor: pointer;
+    padding: 6px 12px;
+}
+
+video {
+    border-radius: 25px;
+    border-top: 1px gray solid;
+
+}
+
+footer { 
+    padding: 2% 2%;
+    border-top: 1px gray solid;
+    color: rgb(0, 115, 255);
+}

@@ -51,6 +51,7 @@ function mousePressed() {
 function openApp() {
 
   hooray("app opened successfully.");
+  window.location.href="zoom.html";  
 
 }
 
@@ -76,3 +77,5 @@ function openApp() {
 
 // #6 - Casey
   // using the camera 
+
+  
