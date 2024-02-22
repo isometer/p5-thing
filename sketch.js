@@ -72,7 +72,7 @@ function openApp() {
 // #4  -- ME // DONE
   // change the name of Zoom call (typing)
 
-// #5  -- ME
+// #5  -- ME // DONE
   // toggle between name, profile, camera (?)
 
 // #6 - Casey
