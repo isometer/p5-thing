@@ -8,8 +8,6 @@ function setup() {
 function showCamera() {
   capture = createCapture(VIDEO);
   capture.parent('camera')
-
-  describe('A video stream from the webcam.');
 }
 
 function changeDisplayType(type) {
@@ -41,7 +39,6 @@ function changeUserName(name) {
   }
 }
 
-// get meeting name
 
 window.onload = async function(){
 
