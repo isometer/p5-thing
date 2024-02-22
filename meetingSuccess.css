@@ -46,3 +46,14 @@ footer {
     border-top: 1px gray solid;
     color: rgb(0, 115, 255);
 }
+
+.meeting-box {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+#camera {
+    text-align: center;
+
+}

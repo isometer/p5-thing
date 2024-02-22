@@ -76,3 +76,12 @@ footer {
     border-top: 1px gray solid;
     color: rgb(0, 115, 255);
 }
+
+.setting-box {
+    display:flex;
+    align-items:center;
+}
+
+.setting-label {
+    margin-right: 20px;
+}
