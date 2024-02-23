@@ -1,14 +1,40 @@
 let capture;
+let mic;
+
+let size = 100;
+let width = 50;
+let height = 50;
 
 function setup() {
   noCanvas();
   showCamera();
+  startMic();
 }
 
 function showCamera() {
   capture = createCapture(VIDEO);
-  capture.parent('camera')
+  capture.parent('camera');
 }
+
+function startMic() {
+  let cnv = createCanvas(width, height);
+  cnv.mousePressed(userStartAudio);
+  mic = new p5.AudioIn();
+  mic.start();
+  cnv.parent('audio');
+}
+
+function draw(){
+  micLevel = mic.getLevel();
+  let ball_size = micLevel*size + size/4;
+
+  background('rgb(255, 255, 255)');
+  let fill_color = 'rgba(51, 153, 255,' + ((micLevel * size).toString()) + ')';
+  fill(fill_color);
+  ellipse(width/2, height/2, ball_size, ball_size);
+}
+
+// non-p5js setup
 
 function changeDisplayType(type) {
 
@@ -132,15 +158,12 @@ window.onload = async function(){
   
   }
 
+  var audioSliderElement = document.getElementById("audioRange");
 
+  audioSliderElement.addEventListener('input', function() {  
+    size = this.value;
+  });
 
-  // var pfpInputElement = document.getElementById('pfpInput');
-
-  // pfpInputElement.addEventListener('input', function() {
-      
-  //     // var name = document.getElementById('userNameInput').value;
-  //     // changeUserName(name);
-  // });
 
   var radios = document.getElementsByName("displayType");
  

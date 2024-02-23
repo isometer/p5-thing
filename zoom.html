@@ -12,8 +12,9 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.min.js"></script>
-    <script src="/node_modules/p5js/p5.js/p5.min.js"></script>
-    <script src="/node_modules/p5js/p5.js/p5.sound.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.js"></script> -->
+    <!-- <script src="/node_modules/p5js/p5.js/p5.min.js"></script> -->
+    <!-- <script src="/node_modules/p5js/p5.js/p5.sound.min.js"></script> -->
     <script src='https://cdn.rawgit.com/processing/p5.accessibility/v0.1.1/dist/p5-accessibility.js'></script> 
 
 </head>
@@ -84,12 +85,16 @@
                     </div>
                 </div>
 
-                <div class="setting-box">
+                <div class="">
 
                     <h3 class="setting-label">Audio Settings</h3>
-                    <div id="audio">
-
+                    <div class="audio-box">
+                        <div id="audio"></div>
+                        <div class="slidecontainer">
+                            <input type="range" min="75" max="150" value="100" class="slider" id="audioRange">
+                        </div>
                     </div>
+                    
 
                 </div>
 

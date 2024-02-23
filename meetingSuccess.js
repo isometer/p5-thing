@@ -10,27 +10,50 @@ async function showCamera() {
 }
 
 async function display() {
-  displayType = localStorage.getItem("display");
 
-  if (displayType === "User Name") {
-    parent = document.getElementById("camera");
-    child = document.createElement("div");
+  type = localStorage.getItem("display");
+
+  parent = document.getElementById("camera");
+
+  if (document.getElementById("pfp-display")) {
+    parent.removeChild(document.getElementById("pfp-display"));
+  }
+  else if (document.getElementById("username-display")) {
+    parent.removeChild(document.getElementById("username-display"));
+  }
+  else if (capture) {
+    capture.remove();
+  }
+
+  if (type === "User Name") {
+    var child = document.createElement("div");
     child.className = "username-display";
     child.id = "username-display";
     child.textContent = localStorage.getItem("userName");
     parent.appendChild(child);
-  } else {
-    parent = document.getElementById("camera");
-    child = document.getElementById("username-display");
-    if(child) {
-      parent.removeChild(parent);
-    }
+    
+  } 
+  else if (type === "Proile Picture") {
+    var child = document.createElement("div");
+
+    child.style.display = 'flex';
+    child.style.justifyContent = 'center';
+    child.style.alignContent = 'center';
+    child.id = "pfp-display";
+    child.className = "pfp-display";
+
+    var pfp = document.createElement("img");
+    pfp.src = localStorage.getItem("pfpPath");
+    pfp.height = 350;
+    pfp.width = 350;
+    pfp.id = 'pfp';
+    pfp.alt = "user's profile picture"
+
+    child.append(pfp)
+    parent.appendChild(child);
   }
-  
-  if (displayType === "Camera") {
+  else if (type === "Camera") {
     showCamera();
-  } else {
-    capture.remove();
   }
 }
 

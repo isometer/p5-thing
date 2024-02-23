@@ -46,7 +46,7 @@ main {
 #meeting-settings {
     border-radius: 25px;
     border: 1px gray solid;
-    padding: 0% 2%;
+    padding: 0% 2% 5% 2%;
     flex-grow: 1;
 }
 
@@ -120,7 +120,7 @@ footer {
     width: 100vw;
     height: 100vh;
 
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 
@@ -229,4 +229,12 @@ input[type="file"] {
     font-size: 24px;
     width: 500px;
     height: 350px;
+}
+
+.audio-box {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    margin-bottom: 3vh;
 }
