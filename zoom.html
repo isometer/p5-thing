@@ -72,7 +72,7 @@
                         </div>
                         
                         <div class="radioWithLabel">
-                            <input type="radio", name="displayType", value="Proile Picture", id="cameraRadio"> 
+                            <input type="radio", name="displayType", value="Proile Picture", class="openModals" id="cameraRadio"> 
                             <label for="profile-picture">Profile Picture</label>
                         </div>
 
@@ -97,6 +97,29 @@
 
             </div>
         </div>
+
+        <div id="modal-bg">
+            <div class="modal">
+                <div class="flex justify-right">
+                    <button class="closeModals" aria-lbael="exit">x</button>
+                </div>
+                <h2>Upload Picture</h2>
+                <div class="flex">
+                    <label for="file-upload" class="custom-file-upload">
+                        <p>Drag and Drop or Click to Browse Files!</p>
+                        <img src="assets/dragdrop.png" alt="icon showing mouse dragging and dropping an image file into a dashed box field">
+                    </label>
+                    <input id="pfp-input" type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)">
+                    
+                    <div class="pfp-preview">
+                        <h3>Preview</h3>
+                        <img id="output" width="200" height="200" arc="assets/blank-pfp.png"/>
+                        <button class="closeModals">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
     </main>
 
